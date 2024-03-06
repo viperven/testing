@@ -9,6 +9,9 @@ This project is a RESTful API built using Node.js, Express, and MongoDB (via Mon
 - **Random Number Generation**: Automatic generation of random numbers for account creation.
 - **Admin Panel**: Administrative functionalities for managing employee accounts and permissions.
 
+![image](https://github.com/viperven/testing/assets/127649834/74b39c10-fd12-4791-88a7-d08820a7a3d9)
+
+
 ## Technologies Used
 - Node.js
 - Express.js

@@ -1,0 +1,160 @@
+/* --------------------------- 
+        COMMON COMPONENTS
+---------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f2f9ff;
+}
+
+.flx {
+    display: flex;
+}
+
+.flx-ac {
+    display: flex;
+    align-items: center;
+}
+
+.flx-jc {
+    display: flex;
+    justify-content: center;
+}
+
+.flx-ajc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grd-3c {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.gap-1r {
+    gap: 1rem;
+}
+
+.rw-gap-1r {
+    row-gap: 3rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* --------------------------- 
+              HEADING
+---------------------------- */
+
+.heading {
+    background-color: #ffbe1c;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #4c3701;
+}
+
+.heading i {
+    color: #fff1cd;
+}
+
+/* --------------------------- 
+              NEW NOTE
+---------------------------- */
+
+.new-note {
+    text-align: right;
+    margin: 2rem 4rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nn-ic {
+    background-color: #ffbe1c;
+    padding: 4px 8px;
+    border-radius: 50%;
+    color: #fff1cd;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.nn-ic:hover {
+    transform: scale(1.2);
+}
+
+/* --------------------------- 
+             NOTE AREA
+---------------------------- */
+.grd-note-area {
+    margin: 0 1rem;
+    cursor: url('quill-pen.png'), auto;
+}
+
+.note-area {
+    position: relative;
+    width: 40rem;
+    height: 20rem;
+    overflow-y: scroll;
+}
+
+.note-area textarea {
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    resize: none;
+    /* border: none; */
+}
+
+.operation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+.edit,
+.delete {
+    padding: 4px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.edit {
+    background-color: #339933;
+}
+
+.delete {
+    background-color: #d72036;
+}
+
+.operation button:hover {
+    transform: scale(1.2);
+}
+
+
+
+@media (width<729px) {
+    .grd-3c {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
